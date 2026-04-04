@@ -104,6 +104,7 @@ let arr = [
 //     console.log(i); 
 // }
 
+
 // for(let i in arr){
 //      console.log(i);
 //     console.log(arr[i]);  
