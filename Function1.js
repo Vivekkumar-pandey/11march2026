@@ -39,24 +39,71 @@
 
 // Callback ****************
 
-function greet(name) {
-    console.log('This Is greet Function');
-    console.log("Good Morning", name);
+// function greet(name) {
+//     console.log('This Is greet Function');
+//     console.log("Good Morning", name);
 
-}
+// }
 
-function saySomething(n) {
-    a = 'Aditya';
-    console.log('This Is saySomething Function');
-    // console.log(n);
-    n(a);
-    
-}
+// function saySomething(n) {
+//     a = 'Aditya';
+//     console.log('This Is saySomething Function');
+//     // console.log(n);
+//     n(a);
+
+// }
 
 // greet('shivam');
 // saySomething()
 
 // greet('Mohan');
 
-saySomething(greet);
+// saySomething(greet);
+
+
+// HOF **************
+
+// callbacks are higher order
+// hof return a function
+
+
+
+// function getData(a) {
+//     console.log("ID Is : ",a);
+// }
+
+// function fetchData(b) {
+//     let id = 101;
+//     b(id);
+// }
+
+// fetchData(getData);
+
+
+// return function *******
+
+function getDouble(num1) {
+    return function (num2) {
+                return num1 * num2;
+                }
+}
+
+// let result1 = getDouble(12);
+// console.log(result1);
+// let result2 =  result1(10);
+// console.log(result2);
+
+
+// let result1 = getDouble(7);
+// console.log(result1(11));
+
+
+// let result = getDouble(5)(9);
+// console.log(result);
+
+
+// console.log(getDouble(17)(3));
+
+
+
 
