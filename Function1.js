@@ -82,11 +82,11 @@
 
 // return function *******
 
-function getDouble(num1) {
-    return function (num2) {
-                return num1 * num2;
-                }
-}
+// function getDouble(num1) {
+//     return function (num2) {
+//                 return num1 * num2;
+//                 }
+// }
 
 // let result1 = getDouble(12);
 // console.log(result1);
@@ -101,9 +101,44 @@ function getDouble(num1) {
 // let result = getDouble(5)(9);
 // console.log(result);
 
-
 // console.log(getDouble(17)(3));
 
 
+// Clouser ***********
 
+// function outer() {
+//     let name = 'Radha'; 
+
+//     return inner;
+
+//     function inner() {
+//         console.log("Name Is : ",name);
+        
+//     }
+// }
+
+// let result = outer()
+// console.log(result);
+// console.log(result());
+
+// result();
+
+
+
+function counter() {
+    let count = 0;
+
+    return inner;
+
+    function inner(){
+        count++;
+        console.log("Count Is : ",count);
+        
+    }
+}
+
+let incriment = counter();
+incriment();
+incriment();
+incriment();
 
