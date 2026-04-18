@@ -181,5 +181,186 @@ a + b
 
 // console.log(result);
 
+// Another Methods Of Array *********
+
+
+// Slice / Splice ********
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+// let newArray = arr.slice(2 , 4);
+
+// console.log(newArray);
+
+// console.log(arr);
+
+
+// Splice ******
+
+// Delete ********
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+// let newarr = arr.splice(2, 4);
+
+// console.log(newarr);
+
+// console.log(arr);
+
+
+// Insert **********
+
+//  let arr = [10, 20, 30, 40, 50];
+//  arr.splice(2, 1, "Ram");
+//  arr.splice(2, 2 , "Ram", "Shyam");
+
+// console.log(arr.indexOf(40));
+
+// arr.splice(4, 0 , "Manmohan");
+
+// console.log(arr);
+
+
+// let arr = Array.of(1, 2, 3, 4, 5);
+// console.log(arr);
+// console.log(arr.length);
+
+
+// let arr = new Array (10, 20, 30, 40, 50);
+// console.log(arr);
+// console.log(arr.length);
+
+
+// let arr = new Array(5);
+// console.log(arr);
+// console.log(arr.length);  // 5
+
+
+
+// let arr = Array.of(5);
+// console.log(arr);
+// console.log(arr.length);  // 1
+
+
+// let arr = Array.from("Shivam");
+// console.log(arr);
+// console.log(arr.length);
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let str = arr.join(" , ");
+// console.log(str);
+// console.log(typeof(str));
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let str = arr.toString();
+
+// console.log(str);
+// console.log(typeof(str));
+
+
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+
+// arr1.push(arr2);
+// console.log(arr1);
+// console.log(arr1.length);
+
+
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let copyarr = arr1.concat(arr2);
+// console.log(copyarr);
+
+
+
+
+// Spread Operator (...)
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let arr3 = [7, 8, 9];
+// let arr4 = [10, 11, 12];
+
+// let newarr = [...arr1, ...arr2, ...arr3, ...arr4];
+// console.log(newarr);
+
+
+// let arr = new Array(5);
+// arr.fill(0);
+
+// let arr = new Array(5).fill(0);
+// console.log(arr);
+// console.log(arr.length);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+// console.log(typeof(arr));
+// console.log(arr instanceof Array);
+
+
+
+// console.log(arr.indexOf(30));
+
+// console.log(arr.includes(30));
+// console.log(arr.includes(70));
+
+
+
+// let arr = [10, 20, 30, 40, 50];
+// let getData = arr.find( n => n > 15);
+// console.log(getData);
+
+
+// let arr = [10, 20, 30, 40, 50];
+// let getIndex = arr.findIndex( n => n > 20);
+// console.log(getIndex);
+
+
+
+let arr = [ 1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 6, 6, 6 ];
+
+console.log(arr);
+console.log(arr.length);
+
+
+let unique = [...new Set(arr)]
+
+console.log(unique);
+console.log(unique.length);
+
+
+// Find Unique By Loop
+// Find Biggest Element Of Array
+// Find Smallest Element Of Array
+// Find Sum Of Elements Of Array
+
+/*
+ Find index of 6 using loop (Linear Search)
+    
+    arr = [2, 3, 7, 8, 6 , 9 , 17, 19]
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
