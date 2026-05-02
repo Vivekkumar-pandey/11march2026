@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document Object Model - DOM</title>
+</head>
+<body>
+    
+<h1>This is Dom Class</h1>
+
+<div>
+    <h2 id="heading">This Is Heading Tag</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+</body>
+<script>
+    //  Selection ************
+    /*
+    by ID
+    by class Name
+    by tag Name
+    Querry Selector
+    querry Selector All
+    */
+   
+// By ID ****************
+
+    let h1 = document.getElementById("heading");
+
+    console.log(h1);
+
+    h1.style.backgroundColor = "Red";
+    h1.style.color = "yellow";
+    h1.style.fontFamily = "san-sarif";
+    h1.style.fontStyle = "italic";
+
+    // console.log(h1.innerHTML);
+    console.log(h1.innerText);
+
+    h1.innerHTML = "Manish Class Of DOM";
+    
+    // console.log(h1.innerHTML);
+    console.log(h1.innerText);
+    
+    
+
+</script>
+</html>
