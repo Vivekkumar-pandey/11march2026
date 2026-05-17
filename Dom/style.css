@@ -1,5 +1,16 @@
 body{
-    background-color: antiquewhite;
+    background-color: gray;
     color: blue;
 
+}
+
+#heading{
+    color: red;
+    background-color: yellow;
+}
+
+.para{
+    background-color: blue;
+    color: yellow;
+    font-family: 'Times New Roman';
 }

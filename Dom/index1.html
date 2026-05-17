@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h3 id="heading">This is H3</h3>
+    <h3 id="heading">This is H3</h3>
+    <h3 id="heading">This is H3</h3>
+
+    <p class="para">1. Lorem ipsum dolor sit amet.</p>
+    <p class="para">2. Lorem ipsum dolor sit amet.</p>
+    <p class="para">3. Lorem ipsum dolor sit amet.</p>
+    <p class="para">4. Lorem ipsum dolor sit amet.</p>
+    <p class="para">5. Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+<script>
+
+// Query Selector ***************
+
+// let element = document.querySelector(".para");
+// let element = document.querySelector("#heading");
+// console.log(element);
+// console.log(element.innerHTML);
+// element.style.color ="red";
+// // element.innerText = "This is Paragraph of 1 ."
+// element.innerText = "This is Heading of 3 ."
+// element.style.backgroundColor = "green";
+// console.log(element.innerHTML);
+
+
+// QuerrySelectorAll ***************
+
+// let element = document.querySelectorAll(".para");
+
+// console.log(element);
+// console.log(element[0].innerHTML);
+// console.log(element[2].innerHTML);
+// console.log(element[4].innerHTML);
+
+// element[1].style.color = "orange"
+// element[3].style.fontStyle = "italic";
+// element[4].style.fontWeight = 'Bold';
+// element[2].style.textDecoration = 'underline';
+
+// console.log(element);
+
+// element.forEach((n)=>{
+//     console.log(n.innerText);
+    
+// })
+
+// Create Element ***************
+
+let d1 = document.createElement('div');
+
+console.log(d1);
+d1.innerText = "This is Our Div";
+d1.style.backgroundColor = 'pink';
+d1.style.color = 'green';
+d1.style.margin = '10px';
+d1.style.padding = '10px';
+
+document.body.appendChild(d1);
+
+
+//  *******************************
+
+let p1 = document.createElement('p');
+
+console.log(p1);
+
+// p1.innerText = "This is Our Paragraph";
+p1.textContent = "This is Our new Paragraph";
+p1.style.backgroundColor = 'pink';
+p1.style.color = 'green';
+
+
+document.body.prepend(p1);
+
+// document.body.append(p1);
+
+// Remove ************
+
+// d1.remove();
+
+</script>
+</html>
