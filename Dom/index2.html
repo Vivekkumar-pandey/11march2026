@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+</head>
+
+<body>
+
+    <!-- <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+    </div> -->
+
+    <ul id="list">
+        <li class="list-items">Java</li>
+        <li class="list-items">SQL</li>
+        <li class="list-items">C++</li>
+    </ul>
+
+</body>
+
+<script>
+
+// Traversing In DOM *********
+
+    // let parent = document.querySelector(".parent");
+
+    // console.log(parent);
+
+    // console.log(parent.children);
+
+    //  console.log(parent.children[0]);
+    //  console.log(parent.children[2]);
+
+    //  console.log(parent.children[2].innerText);
+
+    // parent.children[2].innerText = "MangalWaar"
+
+    // parent.children[0].style.backgroundColor = "Red";
+    //   parent.children[0].style.color = "blue";
+
+    //     parent.children[2].style.backgroundColor = "Green";
+    //   parent.children[2].style.color = "Yellow";
+
+    //     parent.children[4].style.backgroundColor = "yellow";
+    //   parent.children[4].style.color = "red";
+
+    //     parent.children[6].style.backgroundColor = "black";
+    //   parent.children[6].style.color = "orange";
+
+    // console.log(parent.children.length);
+
+
+    // for(let i = 0; i < parent.children.length; i++){
+    //     console.log( parent.children[i].innerText);
+        
+    // }
+
+    // let day_one = document.querySelector(".day");
+
+    // console.log(day_one);
+
+    //  console.log(day_one.innerText);
+
+    //  console.log(day_one.parentElement);
+    //  console.log(day_one.parentNode);
+
+    // console.log(day_one.nextElementSibling);
+    //  console.log(day_one.nextSibling);
+
+    // console.log(day_one.lastElementChild);
+    // console.log(day_one.lastChild);
+    
+    // let all_day = document.querySelectorAll(".day");
+
+    // console.log(all_day);
+
+    // all_day.forEach((n)=>{
+    //     console.log(n.innerHTML);
+        
+    // })
+    
+    
+    // Create Element *******************
+
+    
+
+    // function addLanguage(lang) {
+    //     let li = document.createElement("li");
+    //     //   console.log(li);
+    //     li.innerText = `${lang}`;
+    //     document.querySelector(".list-items").appendChild(li);
+        
+    // }
+
+    // addLanguage("Python");
+    // addLanguage("Swift");
+    // addLanguage("Perl");
+    // addLanguage("Go");
+    // addLanguage("C");
+    // addLanguage("PHP");
+    // addLanguage("C#");
+    // addLanguage("JavaScript");
+
+    // ************************
+
+    
+//  function addLanguage1(lang1) {
+//         let li = document.createElement("li");
+
+//         let newlang = document.createTextNode(lang1);
+//         li.appendChild(newlang);
+      
+//         document.querySelector(".list-items").appendChild(li);
+        
+//     }
+
+//     addLanguage1("Python");
+//     addLanguage1("Swift");
+//     addLanguage1("Perl");
+//     addLanguage1("Go");
+//     addLanguage1("C");
+//     addLanguage1("PHP");
+//     addLanguage1("C#");
+//     addLanguage1("JavaScript");
+
+
+// Edit ********************
+
+// ************ By innerHTML ********************
+
+// let language = document.querySelector("li:nth-Child(2)");
+// console.log(language.innerHTML);
+// language.innerHTML = "Python";
+
+// ********** By createElement *************
+
+// let language = document.querySelector("li:nth-Child(2)");
+// let new_lang = document.createElement("li");
+// new_lang.innerHTML = "PHP";
+// // console.log(new_lang);
+// language.replaceWith(new_lang);
+
+
+// ***********by textContent *************
+
+// let language = document.querySelector("li:nth-Child(2)");
+// let new_lang = document.createElement("li");
+// new_lang.textContent = "Swift";
+// // console.log(new_lang);
+// language.replaceWith(new_lang);
+
+// **************** By outerHTML **************************
+
+let language = document.querySelector("li:nth-Child(2)");
+language.outerHTML = "<li>JavaScript</li>";
+
+
+
+
+</script>
+
+</html>
