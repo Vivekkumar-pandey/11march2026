@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #result{
+            width: 80%;
+            height: 100px;
+            margin: 2px;
+            padding: 10px;
+            color: yellow;
+            background-color: gray;
+            border: 2px solid blue;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #btn {
+            margin: 10px;
+            padding: 10px;
+            color: green;
+            background-color: aquamarine;
+            border: 2px solid red;
+            border-radius: 15px;
+            font-weight: bold;
+
+        }
+
+        #container{
+            width: 50%;
+            height: 50px;
+            margin: 20px;
+            padding: 10px;
+            color: green;
+            background-color: rgb(214, 145, 145);
+            border: 2px solid blue;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="result">Output :- </div>
+
+    <!-- <button id="btn">Click Me !!</button> -->
+
+    <!-- <form action="" id="myform">
+        <fieldset>
+            <legend>Log In</legend>
+        <label for="">USERNAME : </label>
+        <input type="email" placeholder="shivam@gmail.com"><br>
+
+         <label for="">PASSWORD : </label>
+        <input type="password" placeholder="Enter Password "><br>
+
+        <input type="submit" value="LogIn">
+            </fieldset>
+    </form> -->
+
+    <input id="txt" type="text" placeholder="Enter The Text">
+
+    <div id="container">
+        This Is Div
+    </div>
+
+
+</body>
+
+<script>
+
+    // Result ***********
+
+    let result = document.getElementById("result");
+
+    //  Click ***********
+
+    // let button = document.getElementById("btn");
+    // console.log(button);
+    // let flag = true;
+    // button.addEventListener("click", function () {
+    //     // console.log("Button Clicked !!");
+    //     alert("Button Clicked Now !!");
+
+    //     if (flag) {
+    //         button.style.backgroundColor = "White";
+    //         button.style.color = "Blue";
+    //         button.style.border = "2px solid blue";
+    //         button.innerText = "☀️";
+    //         document.body.style.backgroundColor = "Black";
+    //         flag = false;
+    //     }
+    //     else {
+    //         button.style.backgroundColor = "Yellow";
+    //         button.style.color = "Blue";
+    //         button.style.border = "2px solid blue";
+    //         button.innerText = "🌙";
+    //         document.body.style.backgroundColor = "White";
+    //         flag = true;
+    //     }
+
+    // });
+
+
+
+    //     let button1 = document.getElementById("btn");
+
+    //      button1.addEventListener("click", function () {
+    //     // alert("Single Clicked !!")
+    //      result.innerText = "Single Clicked Event Happend !!";
+    // });
+
+
+
+   // // double click ***************
+    
+    // let button2 = document.getElementById("btn");
+
+    // button2.addEventListener("dblclick", function () {
+    //     result.innerText = "Double Clicked Event Happend !!";
+    //     // alert("Double Clicked !!")
+    // });
+
+
+
+    //  Form Handling ***********
+
+    // let form = document.getElementById("myform");
+    // form.addEventListener("submit", function (e) {
+    //     alert("Log In Sucessfull !!")
+    //     e.preventDefault();
+    // });
+
+//  Key Event *************
+
+// let key = document.getElementById("txt");
+
+// key.addEventListener("keydown", function (e) {
+//     result.innerText = `KeyDown :- ${e.key}`;
+// });
+
+// key.addEventListener("keyup", function (e) {
+//     result.innerText = `KeyUp :- ${e.key}`;
+// });
+
+// key.addEventListener("keypress", function (e) {
+//     result.innerText = `KeyPress :- ${e.key}`;
+// });
+
+
+//  Mouse Event ***************
+
+let div = document.getElementById("container");
+
+div.addEventListener("mouseover", function () {
+    result.innerText = "Mouse Over !!"
+});
+
+div.addEventListener("mouseout", function () {
+    result.innerText = "Mouse Out !!"
+});
+
+
+
+</script>
+
+</html>
