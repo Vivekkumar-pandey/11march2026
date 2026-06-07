@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling And Capturing</title>
+    <style>
+        #container{
+            width: 600px;
+            height: 100px;
+            background-color: bisque;
+            border: 2px solid red;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #btn{
+            width: 85px;
+            height: 30px;
+            background-color: yellow;
+            color: red;
+            border: 2px solid blue;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <button id="btn">Click Me !!</button>
+    </div>
+
+</body>
+<script>
+
+// Bubbling **********
+// Child -> Parent -> Body -> Document
+
+// let div = document.getElementById("container");
+// let button = document.getElementById("btn");
+
+// div.addEventListener("click" , function(){
+//     alert("Div Clicked !!");
+// });
+
+// button.addEventListener("click" , function(){
+//     alert("Button Clicked !!");
+// });
+
+
+// Capturing **********
+// Document -> Body -> Parent -> Child
+
+// let div = document.getElementById("container");
+// let button = document.getElementById("btn");
+
+// div.addEventListener("click" , function(){
+//     alert("Div Clicked !!");
+// }, true);
+
+// button.addEventListener("click" , function(){
+//     alert("Button Clicked !!");
+// });
+
+
+// Stop Propagation  **************************
+
+
+// let div = document.getElementById("container");
+// let button = document.getElementById("btn");
+
+// div.addEventListener("click" , function(){
+//     alert("Div Clicked !!");
+// });
+
+// button.addEventListener("click" , function(e){
+//     alert("Button Clicked !!");
+//     e.stopPropagation();
+// });
+
+// button.addEventListener("click" , function(e){
+//     alert("Button Clicked Twice !!");
+//     e.stopPropagation();
+// });
+
+// button.addEventListener("click" , function(e){
+//     alert("Button Clicked Thrice !!");
+//     e.stopPropagation();
+// });
+
+
+//  Imidiate Stop Propagation ***************
+
+let div = document.getElementById("container");
+let button = document.getElementById("btn");
+
+div.addEventListener("click" , function(){
+    alert("Div Clicked !!");
+});
+
+button.addEventListener("click" , function(e){
+    alert("Button Clicked !!");
+    e.stopImmediatePropagation()
+});
+
+// button.addEventListener("click" , function(e){
+//     alert("Button Clicked Twice !!");
+//     e.stopPropagation();
+// });
+
+// button.addEventListener("click" , function(e){
+//     alert("Button Clicked Thrice !!");
+//     e.stopPropagation();
+// });
+
+
+</script>
+
+</html>
